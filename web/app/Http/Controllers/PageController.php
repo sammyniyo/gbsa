@@ -66,7 +66,7 @@ class PageController extends Controller
 
     public function VolcanoesBoutiqueHotel()
     {
-        return view('5-volcanoes-boutique-hotel');
+        return view('volcanoes-boutique-hotel');
     }
     public function singitaHotel()
     {
@@ -74,7 +74,7 @@ class PageController extends Controller
     }
     public function ingagiParkViewLodge()
     {
-        return view('ingagi-Park-View-Lodge');
+        return view('ingagi-park-view-lodge');
     }
     
 }

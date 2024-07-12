@@ -17,5 +17,5 @@ Route::get('/niyo-art-garelly', [PageController::class, 'niyoArtGallery']);
 Route::get('/le-bambou-gorilla-lodge', [PageController::class, 'leBambouGorillaLodge']);
 Route::get('/5-volcanoes-boutique-hotel', [PageController::class, 'VolcanoesBoutiqueHotel']);
 Route::get('/singita-hotel', [PageController::class, 'singitaHotel']);
-Route::get('/ingagi-Park-View-Lodge', [PageController::class, 'ingagiParkViewLodge']);
+Route::get('/ingagi-park-view-lodge', [PageController::class, 'ingagiParkViewLodge']);
 

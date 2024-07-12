@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Feature Hotels | Gorilla Beringei Africa Safaris</title>
+    <title>Niyo Art Gallery | Gorilla Beringei Africa Safaris</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -100,9 +100,6 @@
         </div>
     </div>
     <!-- Navbar End -->
-
-   
-
     <!-- Header Start -->
     <div class="container-fluid page-header">
         <div class="container">
@@ -111,89 +108,69 @@
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="{{ url('/') }}">Home</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Our Hotels</p>
+                    <p class="m-0 text-uppercase">Niyo Art Gallery</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Header End -->
-<!-- Hotels Start -->
-<div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Recommended Hotels</h6>
-                <h1>Explore Top Hotels</h1>
-            </div>
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/One&Only Gorilla's Nest.jpg" alt="One&Only Gorilla's Nest">
-                        <a class="destination-overlay text-white text-decoration-none" href="{{ url('one-and-only') }}">
-                            <h5 class="text-white">One & Only Gorilla's Nest</h5>
-                            <span><i class="fa fa-map-marker-alt text-primary mr-2"></i> Kinigi</span>
-                        </a>
+                <div class="col-lg-8">
+                    <!-- Blog Detail Start -->
+                    <div class="pb-3">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/niyo_arts_61-scaled.jpg" alt="Niyo-Art-Gallery">
+                            </div>
+                        </div>
+                        <div class="bg-white mb-3" style="padding: 30px;">
+                            <div class="d-flex mb-3">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Hotel & Lodges</a>
+                            </div>
+                            <h2 class="mb-3">Niyo Art Gallery | General Information</h2>
+                            <p>Niyo Arts Gallery is 5.9 km from Kigali Serena Hotel, while Kigali Centenary Park is 6.6
+                                km from the property. The nearest airport is Kigali International Airport, 11 km from
+                                the hotel.
+                            </p>
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/niyo_arts_28-scaled.jpg" alt="Niyo-Art-Gallery">
+                            </div>
+                        </div>
                     </div>
+                    <!-- Blog Detail End -->
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/serena.jpg" alt="serena hotel">
-                        <a class="destination-overlay text-white text-decoration-none" href="{{ url('serena-hotel') }}">
-                            <h5 class="text-white">Serena Hotel</h5>
-                            <span><i class="fa fa-map-marker-alt text-primary mr-2"></i> Kigali</span>
-                        </a>
+
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <!-- Author Bio -->
+                    <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
+                        <img src="img/pabro.png" class="img-fluid mx-auto mb-3" style="width: 100px;">
+                        <h3 class="text-primary mb-3">Niyomugabo Pabro</h3>
+                        <p>"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and
+                            most of all, love of what you are doing or learning to do."</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/niyo_arts_61-scaled.jpg" alt="Niyo-Art-Gallery">
-                        <a class="destination-overlay text-white text-decoration-none" href="{{ url('niyo-art-gallery') }}">
-                            <h5 class="text-white">Niyo Art Gallery</h5>
-                            <span><i class="fa fa-map-marker-alt text-primary mr-2"></i> Kinigi</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/Le-Bambou-Gorilla-Lodge.jpg" alt="Le Bambou Gorilla Lodge">
-                        <a class="destination-overlay text-white text-decoration-none" href="{{ url('le-bambou-gorilla-lodge') }}">
-                            <h5 class="text-white">Le Bambou Gorilla Lodge</h5>
-                            <span><i class="fa fa-map-marker-alt text-primary mr-2"></i> Kinigi</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/volcano-manor.jpg" alt="5-volcanoes-boutique-hotel">
-                        <a class="destination-overlay text-white text-decoration-none" href="{{ url('volcanoes-boutique-hotel') }}">
-                            <h5 class="text-white">5 Volcanoes Boutique Hotel</h5>
-                            <span><i class="fa fa-map-marker-alt text-primary mr-2"></i> Kinigi</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/Singita-Kwitonda-Lodge-Exterior-4.jpg" alt="Singita-Kwitonda-Lodge">
-                        <a class="destination-overlay text-white text-decoration-none" href="{{ url('singita-hotel') }}">
-                            <h5 class="text-white">Singita Kwitonda Lodge</h5>
-                            <span><i class="fa fa-map-marker-alt text-primary mr-2"></i> Kinigi</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/Ingagi-Park-View-Lodge-Kinigi-Exterior.JPEG"
-                            alt="Ingagi-Park-View-Lodge-Kinigi-Exterior">
-                        <a class="destination-overlay text-white text-decoration-none" href="{{ url('ingagi-park-view-lodge') }}">
-                            <h5 class="text-white">Ingagi Park View Lodge</h5>
-                            <span><i class="fa fa-map-marker-alt text-primary mr-2"></i> Kinigi</span>
-                        </a>
-                    </div>
+                    <!-- book End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Hotels Start -->
-
+    <!-- Blog End -->
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5">
