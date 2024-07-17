@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BookingController;
 
 Route::get('/', [PageController::class, 'index']);
 Route::get('/about-us', [PageController::class, 'aboutUs']);
@@ -18,4 +20,6 @@ Route::get('/le-bambou-gorilla-lodge', [PageController::class, 'leBambouGorillaL
 Route::get('/5-volcanoes-boutique-hotel', [PageController::class, 'VolcanoesBoutiqueHotel']);
 Route::get('/singita-hotel', [PageController::class, 'singitaHotel']);
 Route::get('/ingagi-park-view-lodge', [PageController::class, 'ingagiParkViewLodge']);
+Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 

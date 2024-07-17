@@ -191,6 +191,51 @@
                             </a>
                         </div>
                     </div>
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Book Us Now</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                        @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                        @endif
+
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                        <form action="{{ route('booking.store') }}" method="POST">
+                            @csrf
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" name="full_name" placeholder="Your name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control p-4" name="email" placeholder="Your email" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select px-4" style="height: 47px;" name="service">
+                                    <option selected>Select a service</option>
+                                    <option value="Hotel">Hotel</option>
+                                    <option value="Trip">Trip</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control p-4" name="message" placeholder="Describe your trip or hotel" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block py-3" type="submit">Book Now</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -124,14 +124,30 @@
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact</h6>
                 <h1>Contact For Any Query</h1>
             </div>
+            @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form bg-white" style="padding: 30px;">
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate"
-                            action="send_contact_email.php" method="POST">
+                         <form action="{{ route('contact.store') }}" method="POST">
+                         @csrf
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" name="name" id="name"
+                                    <input type="text" class="form-control p-4" name="full_name" id="name"
                                         placeholder="Your Name" required="required"
                                         data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
@@ -144,9 +160,9 @@
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" name="subject" id="subject"
-                                    placeholder="Subject" required="required"
-                                    data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control p-4" name="phone" id="phone"
+                                    placeholder="Phone" required="required"
+                                    data-validation-required-message="Please enter a phone number" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
