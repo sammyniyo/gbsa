@@ -142,6 +142,36 @@
                                 of the continent’s rich heritage and traditions, we are dedicated to making sure that
                                 our trips are memorable, safe and enjoyable.</p>
                         </div>
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/tour-1.jpeg" alt="Niyomugabo Pabro - Tour">
+                            </div>
+                            <p>Tour guiding</p>
+                        </div>
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/gor.jpeg" alt="Niyomugabo Pabro">
+                            </div>
+                            <p>Mountain Gorillas</p>
+                        </div>
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/twin.jpeg" alt="Niyomugabo Pabro">
+                            </div>
+                            <p>Twin Lakes</p>
+                        </div>
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/buffaro.jpeg" alt="Niyomugabo Pabro">
+                            </div>
+                            <p>Buffaros In Akagera</p>
+                        </div>
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/zebra.jpeg" alt="Niyomugabo Pabro">
+                            </div>
+                            <p>Zebras</p>
+                        </div>
                     </div>
                     <!-- About Detail End -->
                 </div>
